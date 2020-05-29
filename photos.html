@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  padding: 100px;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+  font-weight: 250;
+  font-family: 'Avenir', sans-serif;
+}
+
+
+ul.navigation {
+  list-style-type: none;
+}
+
+a.navigation {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a.navigation:hover {
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header-container > div {
+  width: 33%;
+}
+
+div.blurb {
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+div.rightpadded {
+  padding-right: 250px;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 49%;
+  max-width: 49%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+<title>Photos</title>
+</head>
+
+<body>
+  <div style="float: right;" align="right">
+    <ul class="navigation">
+      <li><a class="navigation" href="./index.html">Home</a></li>
+      <li><a class="navigation" href="./about.html">About Me</a></li>
+      <li><a class="navigation" href="./photos.html">Photos/Videos</a></li>
+      <li><a class="navigation" href="./writing.html">Writing</a></li>
+      <li><a class="navigation" href="./resume/Andrea-Pan-Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+
+  <div class="rightpadded">
+    <h1>Photos & Videos</h1>
+    <p>Hello, welcome to my homepage! My name is Andrea and I'm a senior studying economics at UC Berkeley. It's ...</p>
+    <br></br>
+    <h2>Photos</h2>
+  </div>
+
+  <div class="row" style="clear: both;"> 
+    <div class="column">
+      <img src="./images/cliffside.jpg" style="width:100%">
+      <img src="./images/eaglespoint.jpg" style="width:100%">
+      <img src="./images/oceanbeachview.jpg" style="width:100%">
+      <img src="./images/pinktree.jpg" style="width:100%">
+    </div> 
+     
+    <div class="column">
+      <img src="./images/berkeleyroad.jpg" style="width:100%">
+      <img src="./images/porch.jpg" style="width:100%">
+      <img src="./images/berkeleyhigh.jpg" style="width:100%">
+      <img src="./images/seaside.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <br></br>
+  <div class=" rightpadded">
+    <h2>Short Movies</h2>
+  </div>
+
+
+</body>
+</html>
