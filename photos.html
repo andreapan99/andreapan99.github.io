@@ -11,6 +11,12 @@ body {
   font-family: 'Avenir', sans-serif;
 }
 
+div.fade {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 
 ul.navigation {
   list-style-type: none;
@@ -42,9 +48,12 @@ div.blurb {
   font-size: 18px;
 }
 
-div.rightpadded {
-  padding-right: 250px;
+div.pagehead {
   font-size: 18px;
+  max-width: 700px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .row {
@@ -65,6 +74,10 @@ div.rightpadded {
   vertical-align: middle;
 }
 
+td.video-description {
+  vertical-align: top;
+}
+
 @media (max-width: 800px) {
   .column {
     flex: 50%;
@@ -79,28 +92,41 @@ div.rightpadded {
   }
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 </style>
-<title>Photos</title>
+<title>Photos & Videos</title>
 </head>
 
 <body>
   <div style="float: right;" align="right">
     <ul class="navigation">
       <li><a class="navigation" href="./index.html">Home</a></li>
-      <li><a class="navigation" href="./about.html">About Me</a></li>
-      <li><a class="navigation" href="./photos.html">Photos/Videos</a></li>
-      <li><a class="navigation" href="./writing.html">Writing</a></li>
+      <!-- <li><a class="navigation" href="./about.html">About Me</a></li> -->
+      <li><a class="navigation" href="./photos.html">Photos & Videos</a></li>
+      <li><a class="navigation" href="./writing.html">Work Samples</a></li>
       <li><a class="navigation" href="./resume/Andrea-Pan-Resume.pdf" target="_blank">Resume</a></li>
     </ul>
   </div>
 
-  <div class="rightpadded">
+  <div class="pagehead">
     <h1>Photos & Videos</h1>
     <p>Hello, welcome to my homepage! My name is Andrea and I'm a senior studying economics at UC Berkeley. It's ...</p>
-    <br></br>
+    <hr>
     <h2>Photos</h2>
   </div>
 
+  <div class="fade">
   <div class="row" style="clear: both;"> 
     <div class="column">
       <img src="./images/cliffside.jpg" style="width:100%">
@@ -118,10 +144,30 @@ div.rightpadded {
   </div>
 
   <br></br>
-  <div class=" rightpadded">
-    <h2>Short Movies</h2>
-  </div>
+  <h2>Short Movies</h2>
+  <table style="width: 100%;" cellpadding="15">
+    <tr>
+      <td>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KdTc5odKiCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </td>
+      <td class="video-description">
+        <h2>Sweet summer afternoons ☀️</h2>
+        <p>A few moments after the end of the semester. Walked around Ocean Beach and made banana cream tarts at home. Also discovered a new flower breed!</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-4QGHprcck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </td>
+      <td class="video-description">
+        <h2>Farm Stay in Santa Cruz</h2>
+        <p>3 days of fun in the sun at the farm! baaa</p>
+        <p>location: FlipJack Ranch in Santa Cruz, CA</p>
+      </td>
+    </tr>
 
+  </table>
+  </div>
 
 </body>
 </html>

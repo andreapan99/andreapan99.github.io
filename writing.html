@@ -11,6 +11,11 @@ body {
   font-family: 'Avenir', sans-serif;
 }
 
+div.fade {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 ul.navigation {
   list-style-type: none;
@@ -35,30 +40,88 @@ a.navigation:hover {
   width: 33%;
 }
 
-div.padded {
+div.blurb {
   padding-right: 150px;
   padding-left: 150px;
   padding-top: 20px;
   font-size: 18px;
 }
 
+div.pagehead {
+  font-size: 18px;
+  max-width: 700px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+div.leftsection {
+  font-size: 16px;
+  max-width: 700px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+a.doclink {
+  color: darkslategray;
+}
+
+a.doclink:hover {
+  color: lightblue;
+}
+
+p.whitespace {
+  margin-bottom: 35px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 </style>
-<title>Writing</title>
+<title>Work Samples</title>
 </head>
 
 <body>
-  <div style="float: right;" align="right">
+  <div style="float: right;" align="right" class="nofade">
     <ul class="navigation">
       <li><a class="navigation" href="./index.html">Home</a></li>
-      <li><a class="navigation" href="./about.html">About Me</a></li>
-      <li><a class="navigation" href="./photos.html">Photos/Videos</a></li>
-      <li><a class="navigation" href="./writing.html">Writing</a></li>
+      <!-- <li><a class="navigation" href="./about.html">About Me</a></li> -->
+      <li><a class="navigation" href="./photos.html">Photos & Videos</a></li>
+      <li><a class="navigation" href="./writing.html">Work Samples</a></li>
       <li><a class="navigation" href="./resume/Andrea-Pan-Resume.pdf" target="_blank">Resume</a></li>
     </ul>
   </div>
 
-  <div class="padded">
+  <div class="pagehead">
+    <h1>Work Samples</h1>
     <p>Hello, welcome to my homepage! My name is Andrea and I'm a senior studying economics at UC Berkeley. It's ...</p>
+    <hr>
+  </div>
+
+  <div class="leftsection">
+    <p><a href="./pdfs/ESPM_155_Essay.pdf" target="_blank" class="doclink"><h3>Injustice in the Food System</h3></a></p>
+    <p class="whitespace">This is a paper I wrote for the upper-division Environmental Science course “Sociology and Political Ecology of Agro-Food Systems.” I explored various groups of people that are disproportionately harmed in our food system in addition to how and why they've been discriminated against.</p>
+
+    <p><a href="./pdfs/Middle_East_Research_Paper.pdf" target="_blank" class="doclink"><h3>How Tunisia Can Further Advance Its Feminist Movement</h3></a></p>
+    <p class="whitespace">This is a paper I wrote for a Middle Eastern Studies Introduction course. I analyzed the current status of women’s rights in Tunisia and proposed three ways that the country can further advance its feminist movement.</p>
+
+    <p><a href="./pdfs/Andrea_Chobani.pdf" target="_blank" class="doclink"><h3>Chobani Presentation</h3></a></p>
+    <p class="whitespace">This is a presentation I made analyzing this famous yogurt company’s branding efforts. I delineated three core components of Chobani’s brand and draw examples from their website, social media platforms, partnerships, and other unique initiatives</p>
+    <object data="./pdfs/Andrea_Chobani.pdf" width="70%"></object>
+
+    <p><a href="./pdfs/PG&E_showcase_poster.pdf" target="_blank" class="doclink"><h3>PG&E Showcase Poster</h3></a></p>
+    <p class="whitespace">This is the poster that I made 2019 summer to showcase my work as an 11-week intern. I worked in the Strategy Formulation department, under the Market Framework initiative. The purpose of this initiative is to develop a set of tools to track emerging market trends and provide guidance on strategic actions given the shifting landscape of the utility industry.</p>
+    <object data="./pdfs/PG&E_showcase_poster.pdf" width="70%"></object>
   </div>
 
 </body>

@@ -11,6 +11,12 @@ body {
   font-family: 'Avenir', sans-serif;
 }
 
+div.fade {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .image-cropper {
   width: 250px;
   height: 250px;
@@ -41,37 +47,64 @@ a.navigation:hover {
   text-decoration: underline;
 }
 
+a {
+  color: dodgerblue;
+}
+
+a:hover {
+  color: deepskyblue;
+}
+
 div.blurb {
   padding-right: 150px;
   padding-left: 150px;
   padding-top: 20px;
   font-size: 18px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Andrea's Website</title>
 </head>
 
 <body>
 
-  <div style="float: left; width: 33%;">
+  <div style="float: left; width: 33%;" class="fade">
     <div class="image-cropper">
       <img src="./images/headshot.jpg" align="middle" height="300" class="profile-pic">
     </div>
   </div>
 
-  <div style="float: left; width: 33%;">
+  <div style="float: left; width: 40%;" class="fade">
     <h1>Andrea Pan</h1>
     <p>Senior at UC Berkeley, Economics B.A. Likes cats.</p>
-    <p>add contact info (email, phone, linkedin)</p>
+    <p><i class="fa fa-envelope-o fa-fw"></i> andreapan@berkeley.edu</p>
+    <p><i class="fa fa-mobile-phone fa-fw"></i> (408) 726-3228</p>
+    <p><i class="fa fa-linkedin fa-fw"></i> <a href="https://www.linkedin.com/in/andrea-pan-562437160/" target="_blank">my LinkedIn</a><p>
+    <hr>
   </div>
 
-  <div style="float: left; width: 33%;" align="right">
+  <div style="float: left; width: 26%;" align="right">
     <ul class="navigation">
       <li><a class="navigation" href="./index.html">Home</a></li>
-      <li><a class="navigation" href="./about.html">About Me</a></li>
-      <li><a class="navigation" href="./photos.html">Photos/Videos</a></li>
-      <li><a class="navigation" href="./writing.html">Writing</a></li>
+      <!-- <li><a class="navigation" href="./about.html">About Me</a></li> -->
+      <li><a class="navigation" href="./photos.html">Photos & Videos</a></li>
+      <li><a class="navigation" href="./writing.html">Work Samples</a></li>
       <li><a class="navigation" href="./resume/Andrea-Pan-Resume.pdf" target="_blank">Resume</a></li>
     </ul>
   </div>
