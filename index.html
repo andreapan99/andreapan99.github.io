@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  padding: 100px;
+  width: 1000px;
+  margin: auto;
+  text-align: left;
+  font-weight: 250;
+  font-family: 'Avenir', sans-serif;
+}
+
+.image-cropper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0%;
+  height: 100%;
+  width: auto;
+}
+
+ul.navigation {
+  list-style-type: none;
+}
+
+a.navigation {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a.navigation:hover {
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header-container > div {
+  width: 33%;
+}
+
+div.padded {
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+</style>
+<title>Andrea's Website</title>
+</head>
+
+<body>
+
+  <div class="header-container">
+    <div>
+      <div class="image-cropper">
+        <img src="./images/headshot.jpg" align="middle" height="300" class="profile-pic">
+      </div>
+    </div>
+
+    <div>
+      <h1>Andrea Pan</h1>
+      <p>Senior at UC Berkeley, Economics B.A. Likes cats.</p>
+      <p>add contact info (email, phone, linkedin)</p>
+    </div>
+
+    <div align="right">
+      <ul class="navigation">
+        <li><a class="navigation" href="">About Me</a></li>
+        <li><a class="navigation" href="">Projects</a></li>
+        <li><a class="navigation" href="">Photos</a></li>
+        <li><a class="navigation" href="">Writing</a></li>
+        <li><a class="navigation" href="">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="padded">
+    <p>Hello, welcome to my homepage! My name is Andrea and I'm a senior studying economics at UC Berkeley. It's ...</p>
+  </div>
+
+</body>
+</html>
